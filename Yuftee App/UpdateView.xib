@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UpdateViewController" customModule="Yuftee" customModuleProvider="target">
+            <connections>
+                <outlet property="updateBody" destination="RLk-iA-uDr" id="pZj-Sr-Mv0"/>
+                <outlet property="updateSubtitle" destination="4uA-2i-laJ" id="rkx-Th-fgQ"/>
+                <outlet property="updateTitle" destination="Yge-oh-Mx0" id="wiv-Dl-geS"/>
+                <outlet property="view" destination="iN0-l3-epB" id="Wbb-zR-LzV"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="64" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yge-oh-Mx0">
+                    <rect key="frame" x="24" y="88" width="553" height="21"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4uA-2i-laJ">
+                    <rect key="frame" x="24" y="108" width="553" height="21"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RLk-iA-uDr">
+                    <rect key="frame" x="24" y="131" width="553" height="457"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="RLk-iA-uDr" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="24" id="1pc-xb-Yf4"/>
+                <constraint firstAttribute="trailing" secondItem="Yge-oh-Mx0" secondAttribute="trailing" constant="8" id="4OK-QU-hlq"/>
+                <constraint firstItem="Yge-oh-Mx0" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="24" id="5kl-9a-Ru0"/>
+                <constraint firstItem="RLk-iA-uDr" firstAttribute="top" secondItem="4uA-2i-laJ" secondAttribute="bottom" constant="2" id="5lN-Wr-hij"/>
+                <constraint firstAttribute="trailing" secondItem="RLk-iA-uDr" secondAttribute="trailing" constant="24" id="63g-HE-D5H"/>
+                <constraint firstItem="RLk-iA-uDr" firstAttribute="top" secondItem="4uA-2i-laJ" secondAttribute="bottom" constant="-1" id="6Vg-rs-T0K"/>
+                <constraint firstAttribute="bottom" secondItem="RLk-iA-uDr" secondAttribute="bottom" constant="24" id="7na-Pr-C9v"/>
+                <constraint firstItem="Yge-oh-Mx0" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="91" id="DVG-sW-7Ir"/>
+                <constraint firstItem="RLk-iA-uDr" firstAttribute="top" secondItem="Yge-oh-Mx0" secondAttribute="bottom" constant="3" id="Dab-5z-g4x"/>
+                <constraint firstAttribute="trailing" secondItem="4uA-2i-laJ" secondAttribute="trailing" constant="24" id="IZw-ES-MVt"/>
+                <constraint firstItem="Yge-oh-Mx0" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="13" id="L2d-Uf-IXz"/>
+                <constraint firstAttribute="trailing" secondItem="RLk-iA-uDr" secondAttribute="trailing" constant="24" id="Nwa-Xp-PNb"/>
+                <constraint firstAttribute="trailing" secondItem="Yge-oh-Mx0" secondAttribute="trailing" constant="24" id="Xb1-gg-d8s"/>
+                <constraint firstItem="RLk-iA-uDr" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="24" id="b8H-pP-zem"/>
+                <constraint firstItem="Yge-oh-Mx0" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="88" id="bhN-9n-ice"/>
+                <constraint firstItem="RLk-iA-uDr" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="78" id="cMg-78-GP1"/>
+                <constraint firstItem="4uA-2i-laJ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="24" id="fh3-B7-KRs"/>
+                <constraint firstItem="4uA-2i-laJ" firstAttribute="top" secondItem="Yge-oh-Mx0" secondAttribute="bottom" constant="-3" id="gBk-ni-ymr"/>
+                <constraint firstItem="Yge-oh-Mx0" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="nOH-YZ-F7F"/>
+                <constraint firstItem="4uA-2i-laJ" firstAttribute="top" secondItem="Yge-oh-Mx0" secondAttribute="bottom" constant="-1" id="nhw-I5-neI"/>
+                <constraint firstItem="RLk-iA-uDr" firstAttribute="top" secondItem="Yge-oh-Mx0" secondAttribute="bottom" constant="41" id="vKR-Io-ytx"/>
+                <constraint firstItem="RLk-iA-uDr" firstAttribute="top" secondItem="4uA-2i-laJ" secondAttribute="bottom" constant="-1" id="yVO-rk-63e"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="4OK-QU-hlq"/>
+                    <exclude reference="DVG-sW-7Ir"/>
+                    <exclude reference="L2d-Uf-IXz"/>
+                    <exclude reference="nOH-YZ-F7F"/>
+                    <exclude reference="gBk-ni-ymr"/>
+                    <exclude reference="63g-HE-D5H"/>
+                    <exclude reference="6Vg-rs-T0K"/>
+                    <exclude reference="Dab-5z-g4x"/>
+                    <exclude reference="b8H-pP-zem"/>
+                    <exclude reference="cMg-78-GP1"/>
+                    <exclude reference="vKR-Io-ytx"/>
+                    <exclude reference="yVO-rk-63e"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>

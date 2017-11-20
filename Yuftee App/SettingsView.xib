@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SettingsViewController" customModule="Yuftee" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="QgN-K4-eUf"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="ST7-Re-qqp">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="kPV-Ah-dvM"/>
+                        <outlet property="delegate" destination="-1" id="HQr-Ey-aFn"/>
+                    </connections>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fKR-as-2a1">
+                    <rect key="frame" x="220" y="506" width="175" height="35"/>
+                    <string key="text">© Yuftee 2014
+http://yuftee.com</string>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="fKR-as-2a1" secondAttribute="bottom" constant="12" id="Bq4-kc-jnE"/>
+                <constraint firstAttribute="trailing" secondItem="fKR-as-2a1" secondAttribute="trailing" constant="12" id="Q60-gU-kt5"/>
+                <constraint firstItem="ST7-Re-qqp" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="YIa-sn-WST"/>
+                <constraint firstAttribute="trailing" secondItem="ST7-Re-qqp" secondAttribute="trailing" id="bJ0-Ko-R6E"/>
+                <constraint firstItem="ST7-Re-qqp" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="t6E-ea-Isf"/>
+                <constraint firstAttribute="bottom" secondItem="ST7-Re-qqp" secondAttribute="bottom" id="vmt-J0-KhE"/>
+                <constraint firstItem="ST7-Re-qqp" firstAttribute="centerX" secondItem="fKR-as-2a1" secondAttribute="centerX" constant="-49" id="xb8-Zb-Pwl"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="xb8-Zb-Pwl"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>
